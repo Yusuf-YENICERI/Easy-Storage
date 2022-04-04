@@ -30,17 +30,17 @@ It is very easy to use this:
 
 * Install the package with yarn or npm:
 ```bash
-  npm install @yeniceri/easy-storage
+  npm install @yusuf-yeniceri/easy-storage
 ```
 or
 ```bash
-  yarn add @yeniceri/easy-storage
+  yarn add @yusuf-yeniceri/easy-storage
 ```
 
 * Import it to start using
 
 ```js
-import db from '@yeniceri/easy-storage'
+import db from '@yusuf-yeniceri/easy-storage'
 ```
 
 * Don't forget to check <a href="https://yusuf-yeniceri.github.io/Easy-Storage">website</a>
