@@ -1,5 +1,5 @@
 {
-  "name": "easy-storage",
+  "name": "@yeniceri/easy-storage",
   "version": "1.0.0",
   "description": "Easy to Use, Local Storage API Wrapper, Easy Storage",
   "main": "index.js",
