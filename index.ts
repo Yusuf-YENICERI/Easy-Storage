@@ -112,4 +112,4 @@ class LocalDb{
 
 let singleton = new LocalDb();
 
-export default singleton;
+module.exports = singleton;
