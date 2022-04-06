@@ -6,6 +6,9 @@
     "noImplicitAny": true,
     "allowJs": true,
       "outDir": "./lib",
+      "jsx": "react",
+    "moduleResolution": "Node",
+
     },
     "include": ["index.ts"],
     "exclude": ["node_modules", "**/__tests__/*"]
