@@ -11,10 +11,10 @@
 
 class LocalDb{
     
-    objectReferences: string[];
-    db: {[key:string]: any} = {};
-    currentRef: {[key:string]: any} = null;
-    scope = "@LocalDb:";
+    private objectReferences: string[];
+    private db: {[key:string]: any} = {};
+    private currentRef: {[key:string]: any} = null;
+    private scope = "@LocalDb:";
 
 
     constructor(){
@@ -31,7 +31,7 @@ class LocalDb{
         return this.accessRef();
     }
 
-    accessRef(): LocalDb{
+    private accessRef(): LocalDb{
         let temp: {[key:string]: any} = this.db;
 
         if(this.objectReferences.length == 0)
@@ -51,7 +51,7 @@ class LocalDb{
         return this;
     }
     
-    makeDb(): void{
+    private makeDb(): void{
         let temp: {[key:string]: any} = this.db;
         for (const objectReference of this.objectReferences) {
             if(temp[objectReference] == null)
@@ -60,7 +60,7 @@ class LocalDb{
         }
     }
 
-    setDb(data: {[key:string]: any}): void{
+    private setDb(data: {[key:string]: any}): void{
 
         if(this.objectReferences.length == 0){
             this.currentRef = data;

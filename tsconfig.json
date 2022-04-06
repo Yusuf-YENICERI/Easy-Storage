@@ -7,6 +7,6 @@
     "allowJs": true,
       "outDir": "./lib",
     },
-    "include": ["src"],
+    "include": ["index.ts"],
     "exclude": ["node_modules", "**/__tests__/*"]
   }
