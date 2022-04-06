@@ -2,7 +2,8 @@
   "name": "@yusuf-yeniceri/easy-storage",
   "version": "1.0.8",
   "description": "Easy to Use, Local Storage API Wrapper, Easy Storage",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"

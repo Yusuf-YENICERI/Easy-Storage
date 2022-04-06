@@ -1,15 +1,14 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "es6",
-      "declaration": true,
-    "noImplicitAny": true,
-    "allowJs": true,
-      "outDir": "./lib",
-      "jsx": "react",
-    "moduleResolution": "Node",
-
-    },
-    "include": ["index.ts"],
-    "exclude": ["node_modules", "**/__tests__/*"]
-  }
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "declaration": true,
+    "outDir": "dist",
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
