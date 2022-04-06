@@ -1,6 +1,6 @@
 {
   "name": "@yusuf-yeniceri/easy-storage",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Easy to Use, Local Storage API Wrapper, Easy Storage",
   "main": "dist/index.js",
   "types": "dist/index.ts",
