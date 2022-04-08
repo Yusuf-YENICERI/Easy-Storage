@@ -25,5 +25,7 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.6.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
