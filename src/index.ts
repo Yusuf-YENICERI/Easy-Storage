@@ -18,6 +18,9 @@ class LocalDb{
 
 
     constructor(){
+    }
+
+    public initializeDb(): void{
         this.db = JSON.parse(localStorage.getItem("LocalDb")) || {};
     }
     
@@ -111,7 +114,5 @@ class LocalDb{
 }
 
 
-if (typeof window !== "undefined"){
-    let singleton = new LocalDb();
-    exports.default = singleton;
-}
+let singleton = new LocalDb();
+export default singleton;
