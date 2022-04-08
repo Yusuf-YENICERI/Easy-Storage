@@ -115,7 +115,3 @@ if (typeof window !== "undefined"){
     let singleton = new LocalDb();
     exports.default = singleton;
 }
-
-exports.default = ()=>{
-    return "error";
-}
