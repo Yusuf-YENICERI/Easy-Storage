@@ -15,17 +15,20 @@ class LocalDb{
     private db: {[key:string]: any} = {};
     private currentRef: {[key:string]: any} = null;
     private scope = "@LocalDb:";
+    private dbInitialized: boolean = false;
 
 
     constructor(){
     }
 
-    public initializeDb(): void{
+    private initializeDb(): void{
+        this.dbInitialized = true;
         this.db = JSON.parse(localStorage.getItem("LocalDb")) || {};
     }
     
 
     public ref(reference: string): LocalDb{
+        if(this.dbInitialized === false)    this.initializeDb();
         if(reference == null)  throw(`${this.scope} Please specify a reference! Null given.`);
         
         this.objectReferences = reference.split('/').filter(x => x.length != 0);
@@ -75,12 +78,14 @@ class LocalDb{
     }
 
     public getDb(): any{
+        if(this.dbInitialized === false)    this.initializeDb();
+        
         return JSON.parse(localStorage.getItem("LocalDb"));
     }
 
     public set(data: {[key:string]: any}): void{
-
         try {
+            if(this.dbInitialized === false)    this.initializeDb();
 
             this.setDb(data);
             
@@ -91,6 +96,7 @@ class LocalDb{
     }
 
     public get(): any {
+        if(this.dbInitialized === false)    this.initializeDb();
         
         if(this.objectReferences.length == 0){
             this.currentRef = this.db;
@@ -101,6 +107,7 @@ class LocalDb{
     }
 
     public modify(_callback: (data: any) => any ): any {
+        if(this.dbInitialized === false)    this.initializeDb();
 
         if(_callback == null) throw(`${this.scope} Null value passed as a callback. Please give a callback!`)
 
