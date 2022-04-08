@@ -110,6 +110,8 @@ class LocalDb{
     }
 }
 
-let singleton = new LocalDb();
 
-export default singleton;
+if (typeof window !== "undefined"){
+    let singleton = new LocalDb();
+    exports.default = singleton;
+}
