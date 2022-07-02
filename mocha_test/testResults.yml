@@ -1,0 +1,44 @@
+ EasyStorage tests:
+    Ref tests:
+      ✔ ref blank
+      ✔ ref null
+      ✔ ref only slash
+      ✔ ref users
+    Set tests:
+      object tests:
+        ✔ Set null
+        ✔ Set number on object
+        ✔ Set boolean on object
+        ✔ Set null on object
+        ✔ Set string on object
+      multiple object data tests:
+        ✔ set null on multiple objects
+        ✔ set number on multiple objects
+        ✔ set boolean on multiple objects
+        ✔ set string on multiple objects
+      array data tests:
+        ✔ set nulls
+        ✔ set numbers
+        ✔ set boolean
+        ✔ set string
+        ✔ set object
+        ✔ set multiple object
+        ✔ set multiple objects with array
+      arrays with multiple object data tests:
+        ✔ set nulled arrays on multiple objects
+        ✔ set numbered arrays on multiple objects
+        ✔ set booleaned arrays on multiple objects
+        ✔ set stringed arrays on multiple objects
+        ✔ set complex objected arrays on multiple objects
+    Get tests:
+      ✔ can get projects
+      ✔ can get project
+      ✔ can get project api version
+      ✔ can get project users
+    Modify tests:
+      ✔ can't give null value to modify 
+      ✔ can modify projects
+      ✔ can modify project
+      ✔ can modify project api version
+      ✔ can modify project users
+      ✔ can modify project user of users
